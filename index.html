@@ -63,73 +63,82 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "disapT1()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
-					<hr>
-										
+					<img src="assets/img/compIcon.png" id="imageTask1" onmouseover="showButton()"><br />
+
+					<button id="buttonTask1" style="display:none" onclick="disapT1()">Click Me</button>
+
+
 					<h3>Task 2 - The Table</h3>
-					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
-					<table class="table table-striped">
+					<!-- Buttons for this task should be entered before the table tag -->
+					<button type="button" onclick="changeTableColor('red')">Red</button>
+					<button type="button" onclick="changeTableColor('blue')">Blue</button>
+					<button type="button" onclick="changeTableColor('green')">Green</button>
+					<table id= "task2Table" class="table table-striped">
 						<thead>
-							<tr>
-								<th>#</th>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>ID</th>
-							</tr>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>ID</th>
+						</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>001</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>002</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>Cable Guy</td>
-								<td>003</td>
-							</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>001</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>002</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>Cable Guy</td>
+							<td>003</td>
+						</tr>
 						</tbody>
 					</table>
-					
+
+
 					<h3>Task 5 - Form</h3>
-					<table>
-						<thead>
+					<form id="formTask5">
+						<table>
+							<thead>
 							<tr>
 								<th colspan="2">Please Fill Out the Form Below</th>
 							</tr>
-						</thead>
-						<tr>
-							<td>Name:</td>
-							<td><input type="text" name="fullName" placeholder="Enter your full name." id="fullName"></td>
-						</tr>
-						<tr>
-							<td>Address:</td>
-							<td><input type="text" name="address" placeholder="Enter your address." id="address"></td>
-						</tr>
-						<tr>
-							<td>Phone:</td>
-							<td><input type="text" name="phone" placeholder="Enter your phone number." id="phone"></td>
-						<tr>
-							<td>Email:</td>
-							<td><input type="text" name="email" placeholder="Enter your email address." id="email"></td>
-						</tr>
-						<tr>
-							<td colspan="2"><button>Submit</button></td>
-						</tr>
-					</table>
-					
-					
+							</thead>
+							<tbody>
+							<tr>
+								<td>Name:</td>
+								<td><input type="text" name="fullName" placeholder="Enter your full name." id="fullName"></td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td><input type="text" name="address" placeholder="Enter your address." id="address"></td>
+							</tr>
+							<tr>
+								<td>Phone:</td>
+								<td><input type="text" name="phone" placeholder="Enter your phone number." id="phone"></td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td><input type="text" name="email" placeholder="Enter your email address." id="email"></td>
+							</tr>
+							<tr>
+								<td colspan="2"><button type="submit">Submit</button></td>
+							</tr>
+							</tbody>
+						</table>
+					</form>
+
+
+
 				</div>
 				<div class="aside">
 					<h2>CAUTION</h2>

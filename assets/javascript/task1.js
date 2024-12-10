@@ -1,18 +1,14 @@
-/* Put code for the task below */
-// Function to show the button when the mouse hovers over the image
+// Shows the button when the mouse hovers over the image
 function showButton() {
-    var button = document.getElementById('buttonTask1');
-    button.style.display = 'block';  // Make the button visible
+    document.getElementById('buttonTask1').style.display = 'block';
 }
 
-// Function to hide the button when the mouse moves away from the image
+// Hides the button when the mouse leaves the picture
 function hideButton() {
-    var button = document.getElementById('buttonTask1');
-    button.style.display = 'none';  // Hide the button again
+    document.getElementById('buttonTask1').style.display = 'none';
 }
 
-// Function to hide the image when the button is clicked
+// Makes the image disappear when the button is clicked
 function disapT1() {
-    var image = document.getElementById('imageTask1');
-    image.style.display = 'none';  // Hide the image
+    document.getElementById('imageTask1').style.display = 'none';
 }
